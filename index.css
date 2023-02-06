@@ -8,7 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction:column-reverse;
 }
 
 a {
@@ -18,6 +18,35 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+}
+
+.first {
+    position: absolute;
+    left: 50px;
+}
+
+.second {
+    position: absolute;
+    right: 25px;
+}
+
+.third {
+    position: absolute;
+    bottom: 45px;
+    right: 150px;
+}
+
+.fourth {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+}
+
+.fifth {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
 }
 
 .titre {
