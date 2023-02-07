@@ -3,6 +3,6 @@ const solution = param.get('solution');
 
 const soluce = "Cheval de Troie";
 
-if(solution == soluce) {
+if(solution == soluce || soluce.toLowerCase() == solution) {
     window.location.href = 'end/';
 }

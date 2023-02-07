@@ -1,23 +1,26 @@
-.modal {
-  display: none;
-}
-.modal-back {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba( 0, 0, 0, .25 )
-}
-.modal-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 25px;
-  background:red;
-  transform: translate(-50%, -50%)
-}
 
-body {
-  min-height: 100vh;
-}
+input {
+    width: 500px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .containered {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .titre {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }

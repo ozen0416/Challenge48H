@@ -65,6 +65,7 @@ window.onload = function () {
     showLives.innerHTML = "Vous avez " + lives + " vies";
     if (lives < 1) {
       showLives.innerHTML = "Game Over";
+      setTimeout(() => {window.location.reload()}, 2000);
     }
     for (var i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {

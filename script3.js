@@ -1,11 +1,8 @@
-for(let i = 0; i < 20;i++) {
-    let newblock = document.getElementById('modal').cloneNode(true);
-    window.document.body.appendChild(newblock);
-    newblock.style.display = 'block';
-    newblock.id = 'modal-' + i;
-    console.log(newblock.lastChild.attributes.id)
-    newblock.lastChild.id = 'modal-' + i + '-close';
-    document.getElementById('modal-' + i + '-close').addEventListener('click', function(e) {
-        document.getElementById('modal').style.display = 'none'
-    })
+const param = new URLSearchParams(document.location.search);
+const solution = param.get('solution');
+
+const soluce = "hacker";
+
+if(solution == soluce || soluce.toLowerCase() == solution) {
+    window.location.href = 'index4.html';
 }

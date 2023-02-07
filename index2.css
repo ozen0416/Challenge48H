@@ -59,7 +59,7 @@ body{
   }
   97% {
     top: 40%;
-    left: 70%;
+    left: 60%;
     transform: translate(-50%, -50%) scale(2);
   }
   100% {
@@ -120,8 +120,8 @@ body{
     transform: translate(-50%, -50%) scale(0.4);
   }
   97% {
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 60%;
     transform: translate(-50%, -50%) scale(2);
   }
   100% {
@@ -759,13 +759,13 @@ body {
   z-index: 1;
 }
 .circle:hover {
-  -webkit-animation: move 60s linear;
-          animation: move 60s linear;
+  -webkit-animation: move 35s linear;
+          animation: move 35s linear;
           z-index: 5000000;
 }
 
 .circle:hover + .counter::after {
-  animation: count 60s linear;
+  animation: count 35s linear;
 }
 
 .counter {
