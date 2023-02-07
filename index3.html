@@ -5,28 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Popup</title>
     <link rel="stylesheet" href="index3.css">
 </head>
 
 <body>
-    <div class="titre">Ceci est un rébus ☺</div>
-    <div>
-        <div class="container">
-            <img src="pics/chut.jpg" class="rébus">
-            <img src="pics/oeuf.jpg" class="rébus">
-            <img src="pics/va.jpg" class="rébus">
-            <img src="pics/L.png" class="rébus l">
+    <div class="modal" id="modal">
+        <div class="modal-back"></div>
+        <div class="modal-container">
+          Modale ici<br />
+          <a href="#" id="modal-close" onclick="close()">[fermer]</a>
         </div>
-        <div class="container" >
-            <img src="pics/calcul.PNG" class="rébus calcul" >
-            <img src="pics/trou.jpg" class="rébus">
-            <img src="pics/oie.jpg" class="rébus">
-        </div>
-        <div class="container margined">
-            <input id="reponse" type="text">
-        </div>
-    </div>
+      </div>
+    <script src="script3.js"></script>
+    <script>
+        function close() {
+            document.getSelection().style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>

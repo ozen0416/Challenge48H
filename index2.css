@@ -120,8 +120,8 @@ body{
     transform: translate(-50%, -50%) scale(0.4);
   }
   97% {
-    top: 40%;
-    left: 70%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(2);
   }
   100% {
@@ -750,7 +750,7 @@ body {
   position: absolute;
   width: var(--size);
   height: var(--size);
-  background-image: url('bouclier.png');
+  background-image: url('pics/bouclier.png');
   background-size: 92%;
   border-radius: 100%;
   top: 30%;
@@ -759,14 +759,13 @@ body {
   z-index: 1;
 }
 .circle:hover {
-  -webkit-animation: move 100s linear;
-          animation: move 100s linear;
+  -webkit-animation: move 60s linear;
+          animation: move 60s linear;
           z-index: 5000000;
 }
+
 .circle:hover + .counter::after {
-  -webkit-animation: count 100s linear;
-          animation: count 100s linear;
-  color: rgba(255, 255, 255, 0.75);
+  animation: count 60s linear;
 }
 
 .counter {
@@ -780,11 +779,28 @@ body {
   text-transform: uppercase;
   z-index: 50;
 }
+
 .counter::after {
-  content: "☝️";
+  content: '0%';
+  color: rgba(255, 255, 255, 0.75);
+}
+.count {
+  color: rgba(255, 255, 255, 0.75);
 }
 
-
-#solution {
- visibility: hidden;
+.soluce {
+  visibility: hidden;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-size: 26px;
 }
