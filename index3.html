@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Popup</title>
     <link rel="stylesheet" href="index3.css">
 </head>
 <body>
-    <h1 class="titre">rébus</h1>
-    <div>
-        <img src="pics/chut.jpg" class="rébus4">
-        <img src="pics/oeuf.jpg" class="rébus5">
-        <img src="pics/va.jpg" class="rébus6">
-        <img src="pics/L.png" class="rébus7">
-        <img src="pics/trou.jpg" class="rébus2">
-        <img src="pics/oie.jpg" class="rébus3">
-    </div>
+    <div class="modal" id="modal">
+        <div class="modal-back"></div>
+        <div class="modal-container">
+          Modale ici<br />
+          <a href="#" id="modal-close" onclick="close()">[fermer]</a>
+        </div>
+      </div>
+    <script src="script3.js"></script>
+    <script>
+        function close() {
+            document.getSelection().style.display = 'none'
+        }
+    </script>
 </body>
 </html>
