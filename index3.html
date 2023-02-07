@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup</title>
+    <title>Ascii art</title>
     <link rel="stylesheet" href="index3.css">
 </head>
 
-<body>
-    <div class="modal" id="modal">
-        <div class="modal-back"></div>
-        <div class="modal-container">
-          Modale ici<br />
-          <a href="#" id="modal-close" onclick="close()">[fermer]</a>
+<body style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+    <div class="titre">Il se cache dans cette image des lettres qui forment un mot, il vous suffit de les retrouver pour former le mot</div>
+    <div>
+        <div class="container">
+            <img src="pics/prout.png" class="rébus">
         </div>
-      </div>
-    <script src="script3.js"></script>
-    <script>
-        function close() {
-            document.getSelection().style.display = 'none'
-        }
-    </script>
+        <form action="" method="get" class="containered margined">
+            <input type="text" name="solution" required>
+            <button type="submit">Tester</button>
+        </form>
+    </div>
+
+        <script src="script3.js"></script>
 </body>
 
 </html>

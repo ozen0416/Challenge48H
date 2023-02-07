@@ -759,13 +759,13 @@ body {
   z-index: 1;
 }
 .circle:hover {
-  -webkit-animation: move 60s linear;
-          animation: move 60s linear;
+  -webkit-animation: move 35s linear;
+          animation: move 35s linear;
           z-index: 5000000;
 }
 
 .circle:hover + .counter::after {
-  animation: count 60s linear;
+  animation: count 35s linear;
 }
 
 .counter {
